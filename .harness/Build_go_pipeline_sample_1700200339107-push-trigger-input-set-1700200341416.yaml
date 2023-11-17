@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_go_pipeline_sample_1700200339107-push-trigger-input-set
+  identifier: Build_go_pipeline_sample_1700200339107pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: HarnessDemo
+  pipeline:
+    identifier: Build_go_pipeline_sample_1700200339107
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
